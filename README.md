@@ -1,9 +1,5 @@
 # Thomas International Prep
 
-## Description
-
-This is a repository for the Thomas International Prep project. The project is a web application that allows users to create an account and take a personality test. The test results are then stored in the database and the user can view their results on their profile page. The user can also view the results of other users on the leaderboard page.
-
 ## Table of Contents
 
 ### Task 1 : Reasoning
