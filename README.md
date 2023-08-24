@@ -1,6 +1,4 @@
-# Thomas International Prep
-
-## Table of Contents
+# Table of Contents
 
 ### Task 1 : Reasoning
 
