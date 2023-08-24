@@ -4,7 +4,7 @@ import { shuffle } from "@/lib/shuffle";
 
 export default async function ReasoningPage() {
   const reasoningData: Array<ReasoningType> = await fetch(
-    "https://thomas-international-prep.vercel.app/api/reasoning",
+    `${process.env.URL}/api/reasoning`,
   ).then((res) => res.json());
 
   return (
