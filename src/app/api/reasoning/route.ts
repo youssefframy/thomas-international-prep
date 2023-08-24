@@ -17,14 +17,14 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Alex is faster than Max. Who is slower?",
     answer: "Max",
-    character1: "Alex",
-    character2: "Max",
+    character1: "Max",
+    character2: "Alex",
   },
   {
     question: "Oliver is not as old as Emma. Who is older?",
     answer: "Emma",
-    character1: "Oliver",
-    character2: "Emma",
+    character1: "Emma",
+    character2: "Oliver",
   },
   {
     question: "Nina is smarter than Maya. Who is less intelligent?",
@@ -35,20 +35,20 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Liam is stronger than Ethan. Who is weaker?",
     answer: "Ethan",
-    character1: "Liam",
-    character2: "Ethan",
+    character1: "Ethan",
+    character2: "Liam",
   },
   {
     question: "Sophia is more talented than Ava. Who is less skilled?",
     answer: "Ava",
-    character1: "Sophia",
-    character2: "Ava",
+    character1: "Ava",
+    character2: "Sophia",
   },
   {
     question: "Zoe is not as fast as Mia. Who is quicker?",
     answer: "Mia",
-    character1: "Zoe",
-    character2: "Mia",
+    character1: "Mia",
+    character2: "Zoe",
   },
   {
     question: "Noah is not as brave as Lucas. Who is braver?",
@@ -65,8 +65,8 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Leo is not as creative as Owen. Who is more creative?",
     answer: "Owen",
-    character1: "Leo",
-    character2: "Owen",
+    character1: "Owen",
+    character2: "Leo",
   },
   {
     question: "Jacob is taller than Ethan. Who is shorter?",
@@ -77,8 +77,8 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Sophie is faster than Mia. Who is slower?",
     answer: "Mia",
-    character1: "Sophie",
-    character2: "Mia",
+    character1: "Mia",
+    character2: "Sophi",
   },
   {
     question: "Aiden is not as old as Olivia. Who is older?",
@@ -89,14 +89,14 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Emma is smarter than Liam. Who is less intelligent?",
     answer: "Liam",
-    character1: "Emma",
-    character2: "Liam",
+    character1: "Liam",
+    character2: "Emma",
   },
   {
     question: "Ava is stronger than Noah. Who is weaker?",
     answer: "Noah",
-    character1: "Ava",
-    character2: "Noah",
+    character1: "Noah",
+    character2: "Ava",
   },
   {
     question: "Lucas is more talented than Mia. Who is less skilled?",
@@ -107,14 +107,14 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Oliver is not as fast as Emma. Who is quicker?",
     answer: "Emma",
-    character1: "Oliver",
-    character2: "Emma",
+    character1: "Emma",
+    character2: "Oliver",
   },
   {
     question: "Grace is not as brave as Jack. Who is braver?",
     answer: "Jack",
-    character1: "Grace",
-    character2: "Jack",
+    character1: "Jack",
+    character2: "Grace",
   },
   {
     question: "Ella is more patient than Sophia. Who is less patient?",
@@ -125,14 +125,14 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Henry is not as creative as Lily. Who is more creative?",
     answer: "Lily",
-    character1: "Henry",
-    character2: "Lily",
+    character1: "Lily",
+    character2: "Henry",
   },
   {
     question: "Sophia is taller than Ava. Who is shorter?",
     answer: "Ava",
-    character1: "Sophia",
-    character2: "Ava",
+    character1: "Ava",
+    character2: "Sophia",
   },
   {
     question: "Noah is faster than Mia. Who is slower?",
@@ -155,26 +155,26 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Ava is stronger than Noah. Who is weaker?",
     answer: "Noah",
-    character1: "Ava",
-    character2: "Noah",
+    character1: "Noah",
+    character2: "Ava",
   },
   {
     question: "Lucas is more talented than Mia. Who is less skilled?",
     answer: "Mia",
-    character1: "Lucas",
-    character2: "Mia",
+    character1: "Mia",
+    character2: "Lucas",
   },
   {
     question: "Oliver is not as fast as Emma. Who is quicker?",
     answer: "Emma",
-    character1: "Oliver",
-    character2: "Emma",
+    character1: "Emma",
+    character2: "Oliver",
   },
   {
     question: "Grace is not as brave as Jack. Who is braver?",
     answer: "Jack",
-    character1: "Grace",
-    character2: "Jack",
+    character1: "Jack",
+    character2: "Grace",
   },
   {
     question: "Ella is more patient than Sophia. Who is less patient?",
