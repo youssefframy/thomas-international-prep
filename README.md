@@ -16,6 +16,8 @@
 
   Answer: `Wendy`
 
+---
+
 ### Task 2 : Preceptual Speed 
 
 The objective for this task is to identify how fast and accurate you are in checking things in your head.
@@ -50,6 +52,8 @@ In this case you will see four pairs of letters Each pair has been put into its 
   | F   | D   | R   | H   |   -  |
   | 0   | 1   | 2   | `3`   | 4   |
 
+---
+
 ### Task 3 : Number Speed & Accuracy
 
 This task measures speed and accuracy in carrying out number tasks in your head. For each question presented start by finding the highest and lowest of the three numbers displayed.
@@ -72,6 +76,8 @@ Having identified those, decide whether the highest number or the lowest number 
 - Example 4: 11, 13, 16
 
   Answer: `16`
+
+---
 
 ### Task 4 : Word Meaning
 
