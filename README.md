@@ -1,34 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Thomas International Prep
 
-## Getting Started
+## Description
+This is a repository for the Thomas International Prep project. The project is a web application that allows users to create an account and take a personality test. The test results are then stored in the database and the user can view their results on their profile page. The user can also view the results of other users on the leaderboard page.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Task 1 : Reasoning
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- A simple question might be
+Tom is heavier than Fred.
+Who is heavier?
+the answer is Tom
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- A slightly more diffferent question might be
+John is brighter than Pete
+Who is Duller?
+the answer is Pete
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- A more difficult question may be:
+Wendy is not as strong as Racher
+Who is Weaker
+The answer is Wendy
 
-## Learn More
+### Task 2 : Preceptual Speed 
 
-To learn more about Next.js, take a look at the following resources:
+The objective for this task is to identify how fast and accurate you are in checking things in your head.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+example 1:
+ In this case you will see four pairs of letters Each pair has been put into its own box. You must decide how many pairs contain letters that are the same.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+a representation of the image
 
-## Deploy on Vercel
+| `0` | 1   | 2   | 3   | 4   |
+| ----- | --- | --- | --- | --- |
+| K     | N   | J   | R   |     |
+| b     | q   | t   | h    |     |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| 0 | 1   | `2`   | 3   | 4   |
+| ----- | --- | --- | --- | --- |
+| Q     | D   | R   | H   |     |
+| f     | d   | m   | h    |     |
+
+
+| 0   | 1   | 2   | `3` | 4   |
+| --- | --- | --- | ----- | --- |
+| E   | Q   | D   | k     |     |
+| e   | y   | d   | k     |     |
+
+| 0   | 1   | 2   | `3`   | 4   |
+| --- | --- | --- | --- | --- |
+| f   | d   | m   | h   |     |
+| F   | D   | R   | H   |     |
+
+### Task 3 : Number Speed & Accuracy
+
+This task measures speed and accuracy in carrying out number tasks in your head. For each question presented start by finding the highest and lowest of the three numbers displayed.
+Having identified those, decide whether the highest number or the lowest number is numerically further away from the remaining number.
+
+Example 1: 4, 2, 8
+the answer is `8` *because 8 - 4 = 4 while 4-2 = 2 so 8 is further away from 4 than the 2*
+
+Example 2: 12, 3, 5
+answer is `12`
+
+Example 3: 10, 7, 5
+answer is `10`
+
+Example 4: 11, 13, 16
+the answer is `16`
+
+### Task 4 : Word Meaning
+
+This is a task to see how quickly you can spot the **odd word** out in a group. You will be given three words. Two of the three will be related in some way, and the third is the odd one out. Each time decide which word is the odd one out and click it.
+
+Example 1; halt, cold, stop
+answer: cold
+
+Example 2: up, down, street
+answer: street
+
+Example 3 : below, under, letter
+answer: letter
