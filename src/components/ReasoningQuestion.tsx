@@ -2,10 +2,13 @@
 
 import { ReasoningType } from "@/app/api/reasoning/route";
 import { useState, useEffect } from "react";
+import ScoreResult from "./ui/ScoreResult";
 
 interface ReasoningQuestionProps {
   reasoningData: Array<ReasoningType>;
 }
+
+const difficulty = 15;
 
 const ReasoningQuestion: React.FC<ReasoningQuestionProps> = ({
   reasoningData,
@@ -32,7 +35,7 @@ const ReasoningQuestion: React.FC<ReasoningQuestionProps> = ({
     if (answer === reasoningData[questionNumber].answer) {
       setScore(score + 1);
     }
-    if (questionNumber + 1 >= 25) {
+    if (questionNumber + 1 >= difficulty) {
       setIsTimerActive(false);
     }
     setQuestionNumber(questionNumber + 1);
@@ -46,7 +49,7 @@ const ReasoningQuestion: React.FC<ReasoningQuestionProps> = ({
   }
   return (
     <div className="flex w-full flex-col items-center justify-center gap-24">
-      {questionNumber < 25 ? (
+      {questionNumber < difficulty ? (
         <>
           <div className="w-5/6 rounded-md bg-white py-16 text-center text-3xl font-semibold text-blue-900 md:w-[800px] lg:w-[1000px]">
             {reasoningData[questionNumber].question}
@@ -71,23 +74,12 @@ const ReasoningQuestion: React.FC<ReasoningQuestionProps> = ({
           </div>
         </>
       ) : (
-        <>
-          <div className="flex flex-col items-center justify-center gap-8">
-            <h2 className="text-3xl font-medium text-black">
-              Your Score is: <span className="underline">{score}</span>
-            </h2>
-            <h3 className="text-2xl font-medium text-black">
-              Your Time is: <span className="underline">{time} seconds</span>
-            </h3>
-          </div>
-          <button
-            type="button"
-            onClick={() => reset()}
-            className="text-xl text-gray-800 underline"
-          >
-            Would you like to try again?
-          </button>
-        </>
+        <ScoreResult
+          score={score}
+          time={time}
+          onClick={reset}
+          difficulty={difficulty}
+        />
       )}
     </div>
   );
