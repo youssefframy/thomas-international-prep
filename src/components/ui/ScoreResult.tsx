@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 
 interface ScrolResultProps {
   score: number;
@@ -13,6 +14,8 @@ const ScoreResult: React.FC<ScrolResultProps> = ({
   difficulty,
   onClick,
 }) => {
+  const router = useRouter();
+
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-8">
@@ -26,13 +29,23 @@ const ScoreResult: React.FC<ScrolResultProps> = ({
           Your Time is: <span className="underline">{time} seconds</span>
         </h3>
       </div>
-      <button
-        type="button"
-        onClick={onClick}
-        className="text-xl text-gray-800 underline"
-      >
-        Would you like to try again?
-      </button>
+      <div className="flex flex-col items-center justify-center gap-4 ">
+        <button
+          type="button"
+          onClick={onClick}
+          className="text-xl text-gray-800 no-underline transition-all duration-300 ease-in hover:text-white hover:underline"
+        >
+          Would you like to try again?
+        </button>
+        <button
+          type="button"
+          onClick={() => router.push("/")}
+          className="text-xl text-gray-800 no-underline transition-all duration-300 ease-in hover:text-white hover:underline"
+        >
+          <span>&larr; </span>
+          Back to Home
+        </button>
+      </div>
     </>
   );
 };
