@@ -33,16 +33,18 @@ const ScoreResult: React.FC<ScrolResultProps> = ({
         <button
           type="button"
           onClick={onClick}
-          className="text-xl text-gray-800 no-underline transition-all duration-300 ease-in hover:text-white hover:underline"
+          className="text-xl text-gray-800 no-underline transition-all duration-300 ease-linear hover:text-white hover:underline"
         >
           Would you like to try again?
         </button>
         <button
           type="button"
           onClick={() => router.push("/")}
-          className="text-xl text-gray-800 no-underline transition-all duration-300 ease-in hover:text-white hover:underline"
+          className="group text-xl text-gray-800"
         >
-          <span>&larr; </span>
+          <span className="text-white opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100">
+            &larr;{" "}
+          </span>
           Back to Home
         </button>
       </div>
