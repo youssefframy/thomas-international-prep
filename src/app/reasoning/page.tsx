@@ -4,7 +4,7 @@ import { shuffle } from "@/lib/shuffle";
 
 export default async function ReasoningPage() {
   const reasoningData: Array<ReasoningType> = await fetch(
-    "http://localhost:3000/api/reasoning",
+    `${process.env.URL}/api/reasoning`,
   ).then((res) => res.json());
 
   return (

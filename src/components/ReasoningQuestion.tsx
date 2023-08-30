@@ -51,12 +51,12 @@ const ReasoningQuestion: React.FC<ReasoningQuestionProps> = ({
     <div className="flex w-full flex-col items-center justify-center gap-24">
       {questionNumber < difficulty ? (
         <>
-          <div className="w-5/6 rounded-md bg-white py-16 text-center text-3xl font-semibold text-blue-900 md:w-[800px] lg:w-[1000px]">
+          <div className="w-[90%] rounded-md bg-white px-6 py-10 text-center text-xl font-semibold text-blue-900 md:w-[800px] md:py-16 md:text-3xl lg:w-[1000px]">
             {reasoningData[questionNumber].question}
           </div>
           <div className="flex w-full justify-center gap-24">
             <button
-              className="w-1/3 bg-blue-950 py-12 text-3xl font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 md:w-56 md:py-20"
+              className="w-1/3 bg-blue-950 py-10 text-2xl font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 md:w-56 md:py-20 md:text-3xl"
               onClick={() =>
                 handleAnswer(reasoningData[questionNumber].character1)
               }
@@ -64,7 +64,7 @@ const ReasoningQuestion: React.FC<ReasoningQuestionProps> = ({
               {reasoningData[questionNumber].character1}
             </button>
             <button
-              className="w-1/3 bg-blue-950 py-12 text-3xl font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 md:w-56 md:py-20"
+              className="w-1/3 bg-blue-950 py-10 text-2xl font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 md:w-56 md:py-20 md:text-3xl"
               onClick={() =>
                 handleAnswer(reasoningData[questionNumber].character2)
               }
