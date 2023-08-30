@@ -8,7 +8,7 @@ interface ReasoningQuestionProps {
   reasoningData: Array<ReasoningType>;
 }
 
-const difficulty = 15;
+const difficulty = 5;
 
 const ReasoningQuestion: React.FC<ReasoningQuestionProps> = ({
   reasoningData,
