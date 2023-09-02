@@ -78,7 +78,7 @@ const reasoning: Array<ReasoningType> = [
     question: "Sophie is faster than Mia. Who is slower?",
     answer: "Mia",
     character1: "Mia",
-    character2: "Sophi",
+    character2: "Sophia",
   },
   {
     question: "Aiden is not as old as Olivia. Who is older?",
