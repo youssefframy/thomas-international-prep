@@ -125,8 +125,68 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Henry is not as creative as Lily. Who is more creative?",
     answer: "Lily",
-    character1: "Lily",
-    character2: "Henry",
+    character1: "Henry",
+    character2: "Lily",
+  },
+  {
+    question: "John is taller than Mark. Who is shorter?",
+    answer: "Mark",
+    character1: "John",
+    character2: "Mark",
+  },
+  {
+    question: "Ella is faster than Mia. Who is slower?",
+    answer: "Mia",
+    character1: "Mia",
+    character2: "Ella",
+  },
+  {
+    question: "Daniel is not as old as Olivia. Who is older?",
+    answer: "Olivia",
+    character1: "Daniel",
+    character2: "Olivia",
+  },
+  {
+    question: "Sophia is smarter than Liam. Who is less intelligent?",
+    answer: "Liam",
+    character1: "Sophia",
+    character2: "Liam",
+  },
+  {
+    question: "Emma is stronger than Noah. Who is weaker?",
+    answer: "Noah",
+    character1: "Emma",
+    character2: "Noah",
+  },
+  {
+    question: "Lucas is more talented than Mia. Who is less skilled?",
+    answer: "Mia",
+    character1: "Lucas",
+    character2: "Mia",
+  },
+  {
+    question: "Oliver is not as fast as Emma. Who is quicker?",
+    answer: "Emma",
+    character1: "Emma",
+    character2: "Oliver",
+  },
+  {
+    question: "Grace is not as brave as Jack. Who is braver?",
+    answer: "Jack",
+    character1: "Jack",
+    character2: "Grace",
+  },
+  {
+    question: "Ella is more patient than Sophia. Who is less patient?",
+    answer: "Sophia",
+    character1: "Ella",
+    character2: "Sophia",
+  },
+  {
+    question: "Henry is not as creative as Lily. Who is more creative?",
+    answer: "Lily",
+    character1: "Henry",
+    character2: "Lily",
   },
   {
     question: "Sophia is taller than Ava. Who is shorter?",
@@ -161,8 +221,8 @@ const reasoning: Array<ReasoningType> = [
   {
     question: "Lucas is more talented than Mia. Who is less skilled?",
     answer: "Mia",
-    character1: "Mia",
-    character2: "Lucas",
+    character1: "Lucas",
+    character2: "Mia",
   },
   {
     question: "Oliver is not as fast as Emma. Who is quicker?",

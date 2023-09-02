@@ -9,7 +9,7 @@ interface PerceptualQuestionProps {
 }
 
 const numbers = [0, 1, 2, 3, 4];
-const difficulty = 5;
+const difficulty = 20;
 
 const PerceptualQuestion: React.FC<PerceptualQuestionProps> = ({
   perceptualData,

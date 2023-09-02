@@ -107,6 +107,56 @@ const perceptual: Array<PerceptualType> = [
     array2: ["q", "p", "s", "r"],
     answer: 0,
   },
+  {
+    array1: ["z", "w", "x", "y"],
+    array2: ["a", "b", "c", "d"],
+    answer: 0,
+  },
+  {
+    array1: ["Q", "Z", "X", "C"],
+    array2: ["x", "y", "z", "w"],
+    answer: 0,
+  },
+  {
+    array1: ["p", "q", "r", "s"],
+    array2: ["A", "B", "C", "D"],
+    answer: 0,
+  },
+  {
+    array1: ["E", "H", "G", "F"],
+    array2: ["H", "G", "F", "E"],
+    answer: 1,
+  },
+  {
+    array1: ["q", "s", "r", "t"],
+    array2: ["q", "r", "s", "t"],
+    answer: 2,
+  },
+  {
+    array1: ["M", "N", "O", "P"],
+    array2: ["o", "p", "m", "n"],
+    answer: 2,
+  },
+  {
+    array1: ["X", "V", "Y", "W"],
+    array2: ["w", "v", "y", "x"],
+    answer: 2,
+  },
+  {
+    array1: ["A", "B", "C", "D"],
+    array2: ["D", "C", "B", "A"],
+    answer: 0,
+  },
+  {
+    array1: ["F", "E", "h", "g"],
+    array2: ["f", "g", "h", "e"],
+    answer: 2,
+  },
+  {
+    array1: ["V", "x", "W", "u"],
+    array2: ["x", "w", "v", "u"],
+    answer: 1,
+  },
 ];
 
 export async function GET() {

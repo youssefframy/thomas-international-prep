@@ -8,7 +8,7 @@ interface MultipleQuestionProps {
   multipleQuestions: Array<QuestionType>;
 }
 
-const difficulty = 5;
+const difficulty = 20;
 
 const MultipleQuestion: React.FC<MultipleQuestionProps> = ({
   multipleQuestions,

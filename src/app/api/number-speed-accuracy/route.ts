@@ -89,23 +89,23 @@ const questions: Array<QuestionType> = [
   },
 
   {
-    choices: [23, 28, 33],
-    answer: 33,
+    choices: [22, 28, 33],
+    answer: 22,
   },
   {
-    choices: [70, 60, 50],
-    answer: 70,
+    choices: [71, 60, 50],
+    answer: 71,
   },
   {
-    choices: [5, 10, 15],
-    answer: 15,
+    choices: [5, 11, 15],
+    answer: 5,
   },
   {
-    choices: [42, 36, 48],
+    choices: [44, 36, 48],
     answer: 48,
   },
   {
-    choices: [30, 17, 40],
+    choices: [31, 17, 40],
     answer: 40,
   },
   {
@@ -117,8 +117,8 @@ const questions: Array<QuestionType> = [
     answer: 17,
   },
   {
-    choices: [89, 94, 99],
-    answer: 99,
+    choices: [89, 94, 100],
+    answer: 100,
   },
   {
     choices: [72, 79, 75],

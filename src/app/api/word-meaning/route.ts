@@ -126,6 +126,46 @@ const questions: Array<QuestionType> = [
     choices: ["round", "square", "table"],
     answer: "table",
   },
+  {
+    choices: ["fast", "slow", "train"],
+    answer: "train",
+  },
+  {
+    choices: ["sweet", "sour", "candy"],
+    answer: "candy",
+  },
+  {
+    choices: ["loud", "soft", "thunder"],
+    answer: "thunder",
+  },
+  {
+    choices: ["big", "small", "elephant"],
+    answer: "elephant",
+  },
+  {
+    choices: ["hot", "cold", "fire"],
+    answer: "fire",
+  },
+  {
+    choices: ["fast", "slow", "cheetah"],
+    answer: "cheetah",
+  },
+  {
+    choices: ["thick", "thin", "paper"],
+    answer: "paper",
+  },
+  {
+    choices: ["happy", "sad", "movie"],
+    answer: "movie",
+  },
+  {
+    choices: ["smooth", "rough", "stone"],
+    answer: "stone",
+  },
+  {
+    choices: ["day", "night", "moon"],
+    answer: "moon",
+  },
 ];
 
 export async function GET() {
