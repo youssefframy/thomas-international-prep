@@ -1,10 +1,11 @@
 import MultipleQuestion from "@/components/MultipleQuestion";
 import { shuffle } from "@/lib/shuffle";
 import { WordsQuestionType } from "@/app/api/word-meaning/route";
+import { getBaseUrl } from "@/utils/utils";
 
 export default async function WordMeaningPage() {
   const wordMeaningData: Array<WordsQuestionType> = await fetch(
-    `${process.env.URL}/api/word-meaning`,
+    `${getBaseUrl()}/api/word-meaning`,
   ).then((res) => res.json());
 
   return (

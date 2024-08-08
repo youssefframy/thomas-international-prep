@@ -1,10 +1,11 @@
 import PerceptualQuestion from "@/components/PerceptualQuestion";
 import { PerceptualType } from "../api/perceptual-speed/route";
 import { shuffle } from "@/lib/shuffle";
+import { getBaseUrl } from "@/utils/utils";
 
 export default async function PerceptualSpeedPage() {
   const perceptualData: Array<PerceptualType> = await fetch(
-    `${process.env.URL}/api/perceptual-speed`,
+    `${getBaseUrl()}/api/perceptual-speed`,
   ).then((res) => res.json());
 
   return (

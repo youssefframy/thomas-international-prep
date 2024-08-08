@@ -61,6 +61,7 @@ const MultipleQuestion: React.FC<MultipleQuestionProps> = ({
     setQuestionNumber(0);
     setScore(0);
     setTime(0);
+    setWrongAnswers([]);
     setIsTimerActive(false);
   }
 

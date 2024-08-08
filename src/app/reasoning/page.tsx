@@ -1,10 +1,11 @@
 import ReasoningQuestion from "@/components/ReasoningQuestion";
 import { ReasoningType } from "../api/reasoning/route";
 import { shuffle } from "@/lib/shuffle";
+import { getBaseUrl } from "@/utils/utils";
 
 export default async function ReasoningPage() {
   const reasoningData: Array<ReasoningType> = await fetch(
-    `${process.env.URL}/api/reasoning`,
+    `${getBaseUrl()}/api/reasoning`,
   ).then((res) => res.json());
 
   return (
