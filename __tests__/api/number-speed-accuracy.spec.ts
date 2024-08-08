@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-import { GET, QuestionType } from "@/app/api/number-speed-accuracy/route";
+import { GET, NumbersQuestionType } from "@/app/api/number-speed-accuracy/route";
 
 describe("GET number-speed-accuracy endpoint", () => {
   it("should return an array of questions with correct properties", async () => {
@@ -26,7 +26,7 @@ describe("GET number-speed-accuracy endpoint", () => {
   });
 });
 
-const validateQuestion = (question: QuestionType) => {
+const validateQuestion = (question: NumbersQuestionType) => {
   const [low, median, high] = [...question.choices].sort((a, b) => a - b);
   const diff1 = median - low;
   const diff2 = high - median;

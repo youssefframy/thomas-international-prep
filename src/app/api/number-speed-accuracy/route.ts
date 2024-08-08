@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
 
-export type QuestionType = {
+export type NumbersQuestionType = {
   choices: Array<number>;
   answer: number;
 };
 
-const questions: Array<QuestionType> = [
+const questions: Array<NumbersQuestionType> = [
   {
     choices: [4, 2, 8],
     answer: 8

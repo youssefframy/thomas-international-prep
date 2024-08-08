@@ -1,20 +1,28 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { QuestionResult } from "@/components/MultipleQuestion";
 
-interface ScrolResultProps {
+interface ScoreResultProps {
   score: number;
   time: number;
   difficulty: number;
   onClick: () => void;
+  wrongAnswers?: Array<QuestionResult>;
 }
 
-const ScoreResult: React.FC<ScrolResultProps> = ({
-  score,
-  time,
-  difficulty,
-  onClick,
-}) => {
+const ScoreResult: React.FC<ScoreResultProps> = ({
+                                                   score,
+                                                   time,
+                                                   difficulty,
+                                                   onClick,
+                                                   wrongAnswers
+                                                 }) => {
   const router = useRouter();
+  if (wrongAnswers !== undefined && Array.isArray(wrongAnswers)) {
+    wrongAnswers.forEach((wa) => {
+      console.warn(`Wrong answer for question [${wa.question.choices}]. Correct answer: ${wa.question.answer}. Your answer: ${wa.response}`);
+    });
+  }
 
   return (
     <>

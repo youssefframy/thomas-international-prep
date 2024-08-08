@@ -1,9 +1,9 @@
 import MultipleQuestion from "@/components/MultipleQuestion";
-import { QuestionType } from "../api/number-speed-accuracy/route";
 import { shuffle } from "@/lib/shuffle";
+import { WordsQuestionType } from "@/app/api/word-meaning/route";
 
 export default async function WordMeaningPage() {
-  const wordMeaningData: Array<QuestionType> = await fetch(
+  const wordMeaningData: Array<WordsQuestionType> = await fetch(
     `${process.env.URL}/api/word-meaning`,
   ).then((res) => res.json());
 
