@@ -86,7 +86,7 @@ const MultipleQuestion: React.FC<MultipleQuestionProps> = ({
           time={time}
           onClick={reset}
           difficulty={difficulty}
-          wrongAnswers ={wrongAnswers}
+          wrongAnswers={wrongAnswers}
         />
       )}
     </div>
