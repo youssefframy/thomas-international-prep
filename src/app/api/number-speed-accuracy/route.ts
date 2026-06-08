@@ -69,7 +69,7 @@ const questions: Array<QuestionType> = [
   },
   {
     choices: [72, 80, 85],
-    answer: 72,
+    answer: 85,
   },
   {
     choices: [27, 34, 29],
