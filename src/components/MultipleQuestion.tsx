@@ -1,22 +1,29 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { QuestionType } from "@/app/api/number-speed-accuracy/route";
+import { NumbersQuestionType } from "@/app/api/number-speed-accuracy/route";
 import ScoreResult from "./ui/ScoreResult";
+import { WordsQuestionType } from "@/app/api/word-meaning/route";
 
 interface MultipleQuestionProps {
-  multipleQuestions: Array<QuestionType>;
+  multipleQuestions: Array<NumbersQuestionType | WordsQuestionType>;
+}
+
+export interface QuestionResult {
+  question: NumbersQuestionType | WordsQuestionType;
+  response: number | string;
 }
 
 const difficulty = 20;
 
 const MultipleQuestion: React.FC<MultipleQuestionProps> = ({
-  multipleQuestions,
-}) => {
+                                                             multipleQuestions
+                                                           }) => {
   const [questionNumber, setQuestionNumber] = useState(0);
   const [score, setScore] = useState(0);
   const [time, setTime] = useState(0);
   const [isTimerActive, setIsTimerActive] = useState(false);
+  const [wrongAnswers, setWrongAnswers] = useState<Array<QuestionResult>>([]);
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
@@ -34,6 +41,15 @@ const MultipleQuestion: React.FC<MultipleQuestionProps> = ({
     }
     if (answer === multipleQuestions[questionNumber].answer) {
       setScore(score + 1);
+    } else {
+      const qWithAnswer: QuestionResult = {
+        question: multipleQuestions[questionNumber],
+        response: answer
+      };
+      setWrongAnswers((prevState) => {
+        prevState.push(qWithAnswer);
+        return prevState;
+      });
     }
     if (questionNumber + 1 >= difficulty) {
       setIsTimerActive(false);
@@ -45,6 +61,7 @@ const MultipleQuestion: React.FC<MultipleQuestionProps> = ({
     setQuestionNumber(0);
     setScore(0);
     setTime(0);
+    setWrongAnswers([]);
     setIsTimerActive(false);
   }
 
@@ -69,6 +86,7 @@ const MultipleQuestion: React.FC<MultipleQuestionProps> = ({
           time={time}
           onClick={reset}
           difficulty={difficulty}
+          wrongAnswers={wrongAnswers}
         />
       )}
     </div>

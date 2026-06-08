@@ -1,10 +1,11 @@
 import MultipleQuestion from "@/components/MultipleQuestion";
-import { QuestionType } from "../api/number-speed-accuracy/route";
+import { NumbersQuestionType } from "../api/number-speed-accuracy/route";
 import { shuffle } from "@/lib/shuffle";
+import { getBaseUrl } from "@/utils/utils";
 
 export default async function NumberSpeedAccuracyPage() {
-  const NumberData: Array<QuestionType> = await fetch(
-    `${process.env.URL}/api/number-speed-accuracy`,
+  const NumberData: Array<NumbersQuestionType> = await fetch(
+    `${getBaseUrl()}/api/number-speed-accuracy`,
   ).then((res) => res.json());
 
   return (
